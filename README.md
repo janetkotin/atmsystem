@@ -1,2 +1,2 @@
 
-this is a simple autonated teller machine simulator with a gu1 interface coded in C#
+this is a simple autonated teller machine simulator with a GUI interface coded in C#
