@@ -52,8 +52,8 @@ class AtmForm : Form
             lblMsg.Text = "Welcome.";
         };
         loginPanel.Controls.AddRange(new Control[] {
-            new Label { Text = "Account", Left = 20, Top = 23 }, txtAcct,
-            new Label { Text = "PIN", Left = 20, Top = 58 }, txtPin, btnLogin });
+            new Label { Text = "Account", Left = 20, Top = 23, AutoSize = true }, txtAcct,
+            new Label { Text = "PIN", Left = 20, Top = 58, AutoSize = true }, txtPin, btnLogin });
 
         // Menu screen
         var btnBal = new Button { Text = "Balance", Left = 20, Top = 60 };
@@ -90,7 +90,7 @@ class AtmForm : Form
         };
 
         menuPanel.Controls.AddRange(new Control[] {
-            new Label { Text = "Amount", Left = 20, Top = 23 }, txtAmount,
+            new Label { Text = "Amount", Left = 20, Top = 23, AutoSize = true }, txtAmount,
             btnBal, btnDep, btnWd, btnOut });
 
         Controls.AddRange(new Control[] { loginPanel, menuPanel, lblMsg });
